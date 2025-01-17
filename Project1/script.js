@@ -25,22 +25,22 @@
 
 // let continent = "Asia";
 // console.log(continent);
-let population = 1.4e9;
-console.log(population);
+// let population = 1.4e9;
+// console.log(population);
 
-population++;
-console.log(population);
-let halfPopulation = population / 2;
-console.log(halfPopulation);
+// population++;
+// console.log(population);
+// let halfPopulation = population / 2;
+// console.log(halfPopulation);
 
-const finland = 6e6;
-console.log(population > finland);
+// const finland = 6e6;
+// console.log(population > finland);
 
-let averagePopulation = 33e6;
-console.log(population < averagePopulation);
+// let averagePopulation = 33e6;
+// console.log(population < averagePopulation);
 
-let description = 'India is in Asia, and its 1.4 billion people speak multiple languages';
-console.log(description);
+// let description = 'India is in Asia, and its 1.4 billion people speak multiple languages';
+// console.log(description);
 
 // // assignment -> 2
 // let isIsland = false;
@@ -88,30 +88,42 @@ console.log(description);
 // job = 'Teacher';
 // console.log(job);
 
-// math operators
+// // math operators
+// const now = 2025;
+// const ageofRizwana = now - 2003;
+// const ageOfRazia = now - 2006;
+// console.log(ageofRizwana, ageOfRazia);
+
+// console.log(ageofRizwana*2, ageofRizwana/10, 2 ** 3);
+
+// const firstName = 'Rizwana';
+// const lastName = 'Perween';
+// console.log(firstName + ' ' + lastName);
+
+// // assignment operators
+// let x = 10 + 10;
+// x += 10; // x -> 30
+// x *= 10; // x -> 300
+// x /= 10; // x -> 30
+// x++; // x -> 31
+// x--;    
+// console.log("The value of X is : " + x);
+
+// //comparision operators - <,>,<=,=>
+// console.log(ageofRizwana > ageOfRazia); 
+// console.log(ageOfRazia >= 18);
+
+// const isFullAge = ageOfRazia >= 18;
+// console.log(now - 2003 > now - 2006);
+
 const now = 2025;
 const ageofRizwana = now - 2003;
 const ageOfRazia = now - 2006;
-console.log(ageofRizwana, ageOfRazia);
 
-console.log(ageofRizwana*2, ageofRizwana/10, 2 ** 3);
-
-const firstName = 'Rizwana';
-const lastName = 'Perween';
-console.log(firstName + ' ' + lastName);
-
-// assignment operators
-let x = 10 + 10;
-x += 10; // x -> 30
-x *= 10; // x -> 300
-x /= 10; // x -> 30
-x++; // x -> 31
-x--;    
-console.log("The value of X is : " + x);
-
-//comparision operators - <,>,<=,=>
-console.log(ageofRizwana > ageOfRazia); 
-console.log(ageOfRazia >= 18);
-
-const isFullAge = ageOfRazia >= 18;
+const averageAge = (ageofRizwana+ageOfRazia)/2;
+console.log(ageofRizwana, ageOfRazia, averageAge);
 console.log(now - 2003 > now - 2006);
+
+let x, y;
+x = y = 25 - 10 -5;
+console.log(x, y);
