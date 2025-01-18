@@ -116,14 +116,59 @@
 // const isFullAge = ageOfRazia >= 18;
 // console.log(now - 2003 > now - 2006);
 
-const now = 2025;
-const ageofRizwana = now - 2003;
-const ageOfRazia = now - 2006;
+// const now = 2025;
+// const ageofRizwana = now - 2003;
+// const ageOfRazia = now - 2006;
 
-const averageAge = (ageofRizwana+ageOfRazia)/2;
-console.log(ageofRizwana, ageOfRazia, averageAge);
-console.log(now - 2003 > now - 2006);
+// const averageAge = (ageofRizwana+ageOfRazia)/2;
+// console.log(ageofRizwana, ageOfRazia, averageAge);
+// console.log(now - 2003 > now - 2006);
 
-let x, y;
-x = y = 25 - 10 -5;
-console.log(x, y);
+// let x, y;
+// x = y = 25 - 10 -5;
+// console.log(x, y);
+
+// const firstName = 'Rizwana';
+// const lastName = 'Perween';
+// const identity = 'Student';
+// const birthYear = 2003;
+// const year = 2025;
+
+// const Rizu = "I'm " + firstName + ' ' + lastName + ', a ' + (year - birthYear)  + ' years old '  +  identity + "!";
+
+// console.log(Rizu);
+
+// // template literals 
+// const rizuNew = `I'm ${firstName} ${lastName}, a ${year - birthYear} years old ${identity}!`
+// console.log(rizuNew);
+
+// console.log(`Just a regular string...`);
+
+// console.log('string with\n\
+// multiple\n\
+// lines');
+
+// console.log(`string with
+// multiple
+// lines`)    
+
+const age = 15;
+
+// control structure     
+if (age >= 18) {
+    console.log('Razia can start driving license');
+} else {
+   const yearsLeft = 18 - age;
+   console.log(`Razia is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2025;
+let century;
+
+if(birthYear <= 2000){
+    century = 20;
+} else {
+    century = 21;
+}
+
+    console.log(`${century} Century`)
