@@ -42,3 +42,23 @@ function print(name, age){
 
 const ans = print(`Rizwana Perween`, 22);
 console.log(ans);
+
+const calculaateAge = function (birthYear) {
+    return 2025 - birthYear;
+}
+
+const yearsUntillRetirement =(birthYear, firstName) => {
+
+    const age = calculaateAge(birthYear);
+    const retirment = 65 - age;
+
+    if(retirment > 0){
+        console.log(`${firstName} retires in ${retirment} years.`);
+        return retirment; // immediately exit a function using this
+    } else {
+        console.log(`${firstName} has already retired.`);
+        return -1;
+    }
+}
+console.log(yearsUntillRetirement(2003, `Rizwana`));
+console.log(yearsUntillRetirement(1958, `Nusrat`));
