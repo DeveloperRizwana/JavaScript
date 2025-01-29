@@ -12,13 +12,13 @@ const checkWinner = function(avgDolphins,avgKoalas) {
     } else if(avgKoalas >= 2 * avgDolphins){
         console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
     } else {
-       console.log(` No team wins...`)
+       console.log(`No team wins...`);
     }
-}
+};
 checkWinner(scoreDolphins,scoreKoalas);
 
 // test 2
-scoreDolphin = calcAverage(85,54,41);
+scoreDolphins = calcAverage(85,54,41);
 scoreKoalas = calcAverage(23,34,27);
 console.log(scoreDolphins,scoreKoalas);
 checkWinner(scoreDolphins,scoreKoalas);
