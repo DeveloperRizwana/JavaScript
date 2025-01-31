@@ -1,5 +1,5 @@
 const Rizwana = {
-    firstName: 'Rizwana',
+    firstName: 'Rizwana', // property
     lastName: 'Perween',
     age: 2025 - 2003,
     friends: ['Jasmine', 'Nasima', 'Nusrat', 'Shabina', 'Umrah', 'Nasima']
