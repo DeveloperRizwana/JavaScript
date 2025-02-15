@@ -36,3 +36,5 @@ razia.calcAge();
 
 const f = rizu.calcAge;
 f(); // undefined
+
+
