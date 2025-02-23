@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing Script", serif;
+}
+
+.story-section {
+  background-color: pink;
+  height: 100vh;
+  text-align: center;
+}
+.h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h h1 {
+  margin-top: 4rem;
+  background-color: rgb(233, 57, 86);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-size: 2.5rem;
+  width: 900px;
+  border-radius: 15px;
+  border: 4px solid white;
+  transition: 0.3s;
+}
+
+.story-section h1:hover,
+.story-card:hover {
+  background-color: rgb(233, 25, 59);
+}
+
+.story-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-card {
+  transition: 0.3s;
+  height: 300px;
+  width: 300px;
+  border: 4px solid white;
+  background-color: rgb(233, 57, 86);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+.story-card h2 {
+  border-radius: 15px;
+  color: rgb(233, 57, 86);
+  height: 50px;
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 150px;
+  background-color: white;
+}
+
+.story-card img {
+  border: 4px solid white;
+  width: 150px;
+  border-radius: 15px;
+  height: 180px;
+  margin-bottom: 1rem;
+}
+
+/* Modal */
+.hidden {
+  display: none;
+}
+
+.modal h1 {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+ 
+.modal h1:hover{
+  background-color: white;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  font-size: 1.5rem;
+  color: rgb(239, 23, 59);
+  font-weight: bold;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 9;
+}
+
+.close-modal {
+  background: rgb(239, 23, 59);
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+}

@@ -5,6 +5,7 @@ function changeContent() {
     box.style.backgroundColor = "#FF6B6B";
     box.style.fontSize = "4rem";
   });
+
 }
 
 function resetContent() {
