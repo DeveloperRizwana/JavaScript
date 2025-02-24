@@ -88,7 +88,7 @@ console.log((false && 'Skipped') || 'Executed');
 function getUserName(name) {
   return name || 'guest';
 }
-
+    
 console.log(getUserName('Rizu'));
 console.log(getUserName(''));
 console.log(getUserName(0));
