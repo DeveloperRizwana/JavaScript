@@ -73,7 +73,7 @@ if (restaurant.orderPizza) {
 // we can use "&&" operators like this
 restaurant.orderPizza && restaurant.orderPizza('Mashroom', 'spinach');
 
-// Practices
+// Practice-1st
 console.log(3 && 'Rizu'); // last value
 console.log(0 && 'Rizu'); // first value - short circuits
 console.log(0 || 'js'); // last value
@@ -82,3 +82,58 @@ console.log(undefined || 100); // last value
 console.log('' && 'Text'); // first value - short circuits
 console.log('Code' || false); // first value - short circuits
 console.log((false && 'Skipped') || 'Executed');
+
+// Practice with function
+// Practice-2nd
+function getUserName(name) {
+  return name || 'guest';
+}
+
+console.log(getUserName('Rizu'));
+console.log(getUserName(''));
+console.log(getUserName(0));
+console.log(getUserName(null));
+
+// Practice-3rd
+function isAdult(age) {
+  age >= 18 && console.log('Access Granted');
+}
+
+isAdult(25);
+isAdult(16);
+
+// Practice-3rd
+console.log(0 || (2 && 3) || 4);
+console.log((1 && null) || 4);
+console.log(' ' || ('Hello' && 'world'));
+
+// Practice-4th
+function logMessage() {
+  console.log('Logging in....');
+}
+
+let isLoggedIn = true;
+isLoggedIn && logMessage();
+
+isLoggedIn = false;
+isLoggedIn && logMessage();
+
+// Practice-4th
+function showDashboard() {
+    console.log("Welcome to your dashboard!");
+}
+
+function showLoginScreen() {
+    console.log("Please log in to continue.");
+}
+
+let isUserLoggedIn = true;
+
+// Your code here (Use && and ||)
+isUserLoggedIn && showDashboard();
+
+isUserLoggedIn = false;
+// Your code here (Use && and ||)
+isUserLoggedIn || showLoginScreen();
+
+
