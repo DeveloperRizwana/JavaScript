@@ -35,7 +35,7 @@ const game = {
   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
   date: 'Feb 21st 2025',
   odds: {
-    team1: 1.33,
+    team1: 12.33,
     x: 3.25,
     team2: 6.5,
   },
@@ -64,8 +64,14 @@ const {
 console.log(team1, draw, team2);
 
 // Problem-6
-const priontGoals = function () {};
+const priontGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
 
-priontGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+priontGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich', 'Rizu');
 priontGoals('Davies', 'Muller');
+priontGoals(...game.scored);
 
+// Problem-7
+team1 < team2 && console.log('Team 1 is more likely to win');
+team1 > team2 && console.log('Team 2 is more likely to win');
