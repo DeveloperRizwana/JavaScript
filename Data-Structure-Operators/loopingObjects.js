@@ -44,7 +44,7 @@ const restaurant = {
   },
 };
 
-// Property NAme
+// Property Name
 const properties = Object.keys(restaurant.openingHours);
 console.log(properties);
 
