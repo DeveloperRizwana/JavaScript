@@ -67,4 +67,5 @@ console.log(restaurant.orderPanipuri?.(0, 1) ?? 'Method does not exist');
 const users = [{ nm: 'Rizwana', email: 'dev.rizwana.perween01@gmail.com' }];
 
 console.log(users[0]?.nm ?? 'User array empty');
+console.log(users[2]?.nm ?? 'User array empty');
     

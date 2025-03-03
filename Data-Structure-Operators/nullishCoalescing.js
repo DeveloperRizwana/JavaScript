@@ -64,7 +64,7 @@ function greet(name) {
     return `Hello  ${name ?? "stranger"} !`;
 }
 
-console.log(greet("Rizu"));  // "Hello, John!"
+console.log(greet("Rizu"));  // "Hello, Rizu!"
 console.log(greet(null));    // "Hello, stranger!"
 console.log(greet(undefined)); // "Hello, stranger!"
 console.log(greet(""));      // "Hello, !" (empty string is kept)
