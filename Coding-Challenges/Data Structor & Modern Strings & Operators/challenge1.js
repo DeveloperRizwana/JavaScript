@@ -1,8 +1,8 @@
 'use strict';
 
 const game = {
-  team1: 'Rizwana',
-  team2: 'Nusrat',
+  team1: 'Rizwana Perween',
+  team2: 'Nusrat Jahan',
   players: [
     [
       'Harmanpreet Singh',
@@ -40,7 +40,7 @@ const game = {
     team2: 6.5,
   },
 };
-
+// Challenge-1
 // Problem-1
 const [player1, player2] = game.players;
 console.log(player1, player2);
@@ -75,3 +75,31 @@ priontGoals(...game.scored);
 // Problem-7
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
+
+// Challenge-2
+// problem-1
+// For arrays
+for (const [i, value] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${value}`);
+}
+
+// For Object
+// for(const [i, value] of Object.entries(game.scored))
+//   console.log(`Goal ${i+1}: ${value}`);
+
+// problem-2
+const values = Object.values(game.odds);
+let sum = 0,
+  average = 0;
+for (const i of values) {
+  sum += i;
+}
+console.log(values);
+average = sum / values.length;
+console.log('Average:' + average);
+
+// problem-3
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === 'x' ? 'drwa' : `Victory ${game[team]}`;
+  console.log(`Odd of ${teamStr}: ${odd}`);
+}
