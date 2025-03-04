@@ -119,7 +119,7 @@ console.log(new Set([...italianFoods, ...mexicanFoods]));
 
 console.log([...new Set([...italianFoods, ...mexicanFoods])]); // Array
 
-// Unique element
+// Unique element - difference method
 const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
 console.log('Difference Italian:', uniqueItalianFoods);
 
