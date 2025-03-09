@@ -27,3 +27,15 @@ const arr2 = new Set([4, 5, 6, 7, 8]);
 
 const diff = arr1.difference(arr2);
 console.log([...diff]);
+
+function findCommon(arr1, arr2) {
+  // Your code here
+  const set1 = new Set(arr1);
+  const set2 = new Set(arr2);
+  const union2 = set1.union(set2);
+
+  const int = set1.intersection(set2);
+  return [int, union2];
+}
+
+console.log(findCommon([1, 2, 3, 4], [3, 4, 5, 6]));
