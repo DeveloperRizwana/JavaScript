@@ -98,10 +98,59 @@ const lower = passenger.toLowerCase();
 const correct = lower[0].toUpperCase() + lower.slice(1);
 console.log(correct);
 
+// Function
 const correctPassenger = function (name) {
   const lower = name.toLowerCase();
   const correct = lower[0].toUpperCase() + lower.slice(1);
   console.log(correct);
 };
-
 correctPassenger('sAlMaN');
+
+// comparing emails
+const email = 'hello@rizu.io';
+const logInEmail = '   Hello@Rizu.io \n';
+
+// const lowerEmail = logInEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim(); // trim Method
+// console.log(trimmedEmail);
+
+const normalizedEmail = logInEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// replacing - replace mehtod
+const priceIndia = '288,97₹';
+const priceUS = priceIndia.replace('₹', '$').replace(',', '.');
+console.log(priceUS);
+
+const announcement =
+  'All the passenger come to boarding door 23. Boarding door 23.';
+
+console.log(announcement.replace('door', 'gate'));
+console.log(announcement.replaceAll('door', 'gate'));
+
+console.log(announcement.replace(/door/g, 'gate'));
+
+// Booleans
+const plane2 = 'Airbus A320neo';
+console.log(plane2.includes('A32'));
+console.log(plane2.startsWith('B32'));
+console.log(plane2.startsWith('Air'));
+
+if (plane2.startsWith('Air') && plane2.endsWith('neo')) {
+  console.log('Part of the new Airbus family');
+}
+
+// Practice Exercise
+const checkBaggage = function (itmes) {
+  const baggage = itmes.toLowerCase();
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are not allowed on board');
+  } else {
+    console.log('Welcome Abroad!!');
+  }
+};
+
+checkBaggage('I have a laptop, some Food and a pocket Knife');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection');
