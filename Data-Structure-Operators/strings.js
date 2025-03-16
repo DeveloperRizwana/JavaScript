@@ -70,7 +70,9 @@ console.log(airLine.slice(airLine.lastIndexOf(' ') + 1));
 
 console.log(airLine.slice(-2));
 console.log(airLine.slice(1, -1));
+console.log(airLine.slice(0, -1));
 
+// Function
 const checkMiddleSeat = function (seat) {
   const s = seat.slice(-1);
   if (s === 'B' || s === 'E')
@@ -157,6 +159,7 @@ checkBaggage('Got some snacks and a gun for protection');
 
 // split and join method
 console.log('a+very+nice+string'.split('+'));
+console.log('a very nice string'.split('+'));
 console.log('Rizwana Perween'.split(' '));
 
 const [firstName, lastName] = 'Rizwana Perween'.split(' ');
@@ -206,5 +209,5 @@ const planesInLine = function (n) {
   console.log(`There are ${n} planes in line ${'✈️'.repeat(n)}`);
 };
 planesInLine(5);
-planesInLine(4);
+planesInLine(4 );
 planesInLine(8);
