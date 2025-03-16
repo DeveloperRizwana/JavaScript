@@ -31,3 +31,8 @@ const newPassport = function (person) {
 
 newPassport(rizwana);
 checkIn(flight, rizwana);
+console.log(flight);   
+// Output: 'LH234'  (Unchanged)
+
+console.log(rizwana);
+// Output: { name: 'Ms.Rizwana Perween', passport: some random number }
