@@ -11,6 +11,27 @@ for (const flight of flights.split('+')) {
   const output = `${type.startsWith('_Delayed') ? '🔴' : ''}${type.replaceAll(
     '_',
     ' '
-  )} from ${getCode(from)} to ${getCode(to)} (${time.replace(':', 'h')})`.padStart(36);
+  )} from ${getCode(from)} to ${getCode(to)} (${time.replace(
+    ':',
+    'h'
+  )})`.padStart(36);
   console.log(output);
 }
+
+console.log('JavaScript'.slice(4, -3));
+
+console.log('hello world'.replace('o', 'O'));
+console.log('hello world'.replace(/o/g, 'O'));
+
+// The following function is to count vowels in a string
+function countVowels(str) {
+  let vowels = 'aeiou';
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countVowels('hello world')); // Expected Output: 3
