@@ -35,4 +35,4 @@ console.log(flight);
 // Output: 'LH234'  (Unchanged)
 
 console.log(rizwana);
-// Output: { name: 'Ms.Rizwana Perween', passport: some random number }
+// Output: { name: 'Ms.Rizwana Perween' , passport: some random number }
