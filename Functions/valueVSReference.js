@@ -8,6 +8,7 @@ const rizwana = {
 
 const checkIn = function (flightNum, passenger) {
   flightNum = 'LH999';
+
   passenger.name = 'Ms.' + passenger.name;
 
   if (passenger.passport === 3984897667) {
@@ -31,7 +32,7 @@ const newPassport = function (person) {
 
 newPassport(rizwana);
 checkIn(flight, rizwana);
-console.log(flight);   
+console.log(flight);
 // Output: 'LH234'  (Unchanged)
 
 console.log(rizwana);
