@@ -45,7 +45,7 @@ const numbers = [1, 2, 3, 4, 5];
 
 // Your code here
 const squaredNumbers = numbers.map(function (num) {
-  return num * num;
+  return num * num; 
 
 });
 
