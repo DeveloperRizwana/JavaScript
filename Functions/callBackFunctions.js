@@ -35,4 +35,5 @@ const frnds = function (name) {
 
 const friendsArray = ['Rizwana', 'Nusrat', 'Jasmine', 'Choti'];
 friendsArray.forEach(frnds);
+
 alert(`These 4 girls are best friends: ${friendsArray.join(', ')}`);
