@@ -45,8 +45,23 @@ const numbers = [1, 2, 3, 4, 5];
 
 // Your code here
 const squaredNumbers = numbers.map(function (num) {
-  return num * num; 
-
+  return num * num;
 });
 
 console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+// Problem -> 5
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('Hey!!!');
+greeterHey('Rizwana 🤭');
+greeterHey('Razia 🤭');
+
+// Arrow function
+const greet2 = greetin => name => console.log(`${greetin} ${name}`);
+const greeter2 = greet2('Hii');
+greeter2('Choti');
