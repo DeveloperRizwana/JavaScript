@@ -61,7 +61,7 @@ const greeterHey = greet('Hey!!!');
 greeterHey('Rizwana 🤭');
 greeterHey('Razia 🤭');
 
-// Arrow function
+// Arrow Function
 const greet2 = greetin => name => console.log(`${greetin} ${name}`);
 const greeter2 = greet2('Hii');
 greeter2('Choti');
