@@ -61,11 +61,31 @@ console.log(addVat(34));
 
 /// practice
 const addTax2 = function (rate) {
-    return function (value) {
-        return value + value * rate;
-    };
+  return function (value) {
+    return value + value * rate;
+  };
 };
 
 const addVat2 = addTax2(0.23);
 console.log(addVat2(100));
 console.log(addVat2(34));
+
+// Practice of all 3 using one function
+const user = {
+  name: 'Rizwana Perween',
+  welcome(greeting, time) {
+    console.log(`${greeting}...${this.name}!!! Have a great ${time}`);
+  },
+};
+
+const welcome = user.welcome;
+
+// Using Call Method
+welcome.call(user, 'Hello', 'Morning..');
+
+// Using apply Method
+welcome.apply(user, ['Hii', 'Evening..']);
+
+// Using bind Method
+const wlcm = welcome.bind(user);
+wlcm('hey', 'Afternoon..');
