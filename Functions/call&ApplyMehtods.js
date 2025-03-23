@@ -66,5 +66,4 @@ greet.call(person, ...data);
 
 // 2
 const person2 = { name: 'Rizzu' };
-
 greet.call(person2, 20, 'Bihar');
