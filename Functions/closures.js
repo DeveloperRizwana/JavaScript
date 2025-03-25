@@ -25,6 +25,17 @@ const g = function () {
   };
 };
 
-g();
+const h = function () {
+  const b = 12;
+  f = function () {
+    console.log(2 * b);
+  };
+};
 
+g();
 f();
+
+// re-assigning function
+h();
+f();
+console.dir(f);
