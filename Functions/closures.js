@@ -12,6 +12,19 @@ const secureBooking = function () {
 const booker = secureBooking();
 
 booker();
+booker();
+booker();
 
-booker();
-booker();
+// Closures Practice
+let f;
+
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(2 * a);
+  };
+};
+
+g();
+
+f();
