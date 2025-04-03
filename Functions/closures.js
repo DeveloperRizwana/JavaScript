@@ -12,7 +12,6 @@ const secureBooking = function () {
 const booker = secureBooking();
 
 booker();
-
 booker();
 booker();
 
