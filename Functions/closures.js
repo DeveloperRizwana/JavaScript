@@ -13,6 +13,7 @@ const booker = secureBooking();
 
 booker();
 booker();
+
 booker();
 
 // Closures Practice
