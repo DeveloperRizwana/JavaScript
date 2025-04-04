@@ -13,10 +13,10 @@ const booker = secureBooking();
 
 booker();
 booker();
-
 booker();
 
 // Closures Practice
+// example-1
 let f;
 
 const g = function () {
@@ -40,3 +40,15 @@ f();
 h();
 f();
 console.dir(f);
+
+// example-2
+const boardPassengers = function (n, wait) {
+  const perGroup = n / 3;
+  setTimeout(function () {
+    console.log(`We are now boarding all ${n} passenger`);
+    console.log(`There are 3 groups, each with ${perGroup} passengers`);
+  }, wait * 1000);
+  console.log(`Will start boarding in ${wait} seconds`);
+};
+
+boardPassengers(180, 3);
