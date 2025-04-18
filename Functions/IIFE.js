@@ -16,7 +16,7 @@ runOnce();
 
 {
   const isPrivate = 87;
-  var notPrivate = 23;
+  var notPrivate = 26;
 }
 // console.log(isPrivate);
 console.log(notPrivate);
