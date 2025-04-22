@@ -63,13 +63,13 @@ const { menu = [], starterMenu: starter = [] } = restaurant;
 console.log(menu, starter);
 
 // Mutatig value
-let a = 111;
-let b = 999;
+// let a = 111;
+// let b = 999;
 
 const obj = { a: 21, b: 12, c: 56 };
 
-// let { a, b } = obj; // we can't do this
-({ a, b } = obj);
+let { a, b } = obj; // we can't do this
+// ({ a, b } = obj);
 
 console.log(obj);
 console.log(a, b);
