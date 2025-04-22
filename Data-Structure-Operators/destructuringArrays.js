@@ -43,12 +43,12 @@ let [main, , secondary] = restaurant.categories;
 
 // Destructuring VALUES
 [main, , secondary] = [secondary, , main];
-console.log('Structuring......');
+console.log('Structuring......'); 
 console.log(main, secondary);
 
 // console.log(restaurant.order(2, 0));
-// Receive two reutrn values from a fucntion
-const [starter, mainCourse] = restaurant.order(2, 0);
+// Receive two return values from a function
+const [starter, mainCourse] = restaurant.order(3, 0);
 console.log(starter, mainCourse);
 
 // Nested destructuring
