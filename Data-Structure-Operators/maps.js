@@ -54,7 +54,7 @@ rest
   .set('categories', ['Vegetarian', 'Non-Vegetarian', 'Street-Food'])
   .set('open', 11)
   .set('close', 23)
-  .set(true, 'We are open :D')
+  .set(true, 'We are open :)')
   .set(false, 'we are clossed :(');
 
 // get method
