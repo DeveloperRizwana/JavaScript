@@ -47,8 +47,8 @@ restaurant.orderDeleivery({
   starterIdx: 2,
 });
 
-const { names, openingHours, categories } = restaurant;
-console.log(names, openingHours, categories);
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
 
 const {
   name: restaurantName,
