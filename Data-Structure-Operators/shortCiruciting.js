@@ -6,7 +6,7 @@ const restaurant = {
   categories: ['Vegetarian', 'Non-Vegetarian', 'Street-Food'],
   starterMenu: ['Samosa', 'Paneer Tikka', 'Chicken Pakora', 'Dahi Puri'],
   mainMenu: [
-    'Butter Chicken',
+    'Butter Chicken', 
     'Dal Makhani',
     'Paneer Butter Masala',
     'Biryani',

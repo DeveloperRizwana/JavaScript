@@ -76,15 +76,15 @@ console.log(...str);
 // console.log(`${...str} Perween`);
 
 // Real World Example
-const ingredients = [
-  prompt("let's make pasta! Ingredient 1?"),
-  prompt('Ingredient 2?'),
-  prompt('Ingredient 3'),
-];
-console.log(ingredients);
+// const ingredients = [
+//   prompt("let's make pasta! Ingredient 1?"),
+//   prompt('Ingredient 2?'),
+//   prompt('Ingredient 3'),
+// ];
+// console.log(ingredients);
 
-restaurant.orderPAsta(ingredients[0], ingredients[1], ingredients[2]);
-restaurant.orderPAsta(...ingredients);
+// restaurant.orderPAsta(ingredients[0], ingredients[1], ingredients[2]);
+// restaurant.orderPAsta(...ingredients);
 
 // Objects
 const newRestaurant = { FoundedIn: 1990, ...restaurant, founder: 'Nusrat' };
