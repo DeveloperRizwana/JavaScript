@@ -48,9 +48,10 @@ const restaurant = {
 
 // Spread, because on right side of "="
 const arr = [1, 2, 3, ...[4, 5]];
+console.log(arr);
 
 // Rest, because on left side of "="
-const [a, b, ...others] = [1, 2, 3, 4, 5];
+const [a, b, ...others] = [1, 2, 3, 4, 5, 7, 7, 8];
 console.log(a, b, others);
 
 const [ButterChicken, , paneer, ...otherFood] = [
