@@ -28,7 +28,7 @@ const swiss = {
 
 const book = lufthansa.book;
 
-// Bind Mthod
+// Bind Method
 // book.call(eurowings, 23, 'Sara');
 const bookEW = book.bind(eurowings);
 bookEW(23, 'Sara Khan');
