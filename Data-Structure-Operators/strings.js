@@ -104,6 +104,7 @@ console.log(correct);
 const correctPassenger = function (name) {
   const lower = name.toLowerCase();
   const correct = lower[0].toUpperCase() + lower.slice(1);
+  
   console.log(correct);
 };
 correctPassenger('sAlMaN');
