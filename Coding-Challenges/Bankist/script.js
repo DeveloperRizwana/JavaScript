@@ -25,7 +25,7 @@ const ceckDogs = function (dogsJulia, dogsKate) {
 ceckDogs(dogsJulia, dogsKate);
 
 /////// challenge -> 2 ////////
-const ages = [5, 2, 4, 1, 25, 8, 3];
+const ages = [5, 2, 4, 1, 15, 8, 3];
 
 // const calcAverageHumanAge = function (ages) {
 //   const humanAges = ages.map(function (cur) {
@@ -39,11 +39,17 @@ const ages = [5, 2, 4, 1, 25, 8, 3];
 // };
 
 const calcAverageHumanAge = function (ages) {
-  const humanAges = ages.map(cur => (cur >= 2 ? 2 * cur : 16 + cur * 4));
-  const adult = ages.filter(cur => cur >= 18);
+  const humanAges = ages.map(cur => (cur <= 2 ? cur * 2 : 16 + cur * 4));
+  const adult = humanAges.filter(cur => cur >= 18);
   console.log(humanAges);
   console.log(adult);
+  // Average
+  // const avg = adult.reduce((acu, cur) => acu + cur, 0) / adult.length;
+  // Average of 2,3---- (2+3)/2 = 2.5 === 2/2 + 3/2 = 2.5
+  const avg = adult.reduce((acu, cur, i, arr) => acu + cur / arr.length, 0);
+  return avg;
 };
-console.log(ages);
-calcAverageHumanAge(ages);
 
+console.log(ages);
+const avgs = calcAverageHumanAge(ages);
+console.log(avgs);
