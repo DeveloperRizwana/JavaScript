@@ -53,3 +53,14 @@ const calcAverageHumanAge = function (ages) {
 console.log(ages);
 const avgs = calcAverageHumanAge(ages);
 console.log(avgs);
+
+/// Challenge-3
+const calcAverageHumanAge2 = ages =>
+  ages
+.map(cur => (cur <= 2 ? cur * 2 : 16 + cur * 4))
+.filter(cur => cur >= 18)
+.reduce((acu, cur, i, arr) => acu + cur / arr.length, 0);
+
+const avgs2 = calcAverageHumanAge2(ages);
+console.log(avgs2);
+
