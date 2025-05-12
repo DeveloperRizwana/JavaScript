@@ -44,6 +44,7 @@ const calcAverageHumanAge = function (ages) {
   
 };
 console.log(ages);
+
 calcAverageHumanAge(ages);
 
 const adultDogs = function(arr){
