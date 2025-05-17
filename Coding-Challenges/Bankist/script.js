@@ -57,9 +57,9 @@ console.log(avgs);
 /// Challenge-3
 const calcAverageHumanAge2 = ages =>
   ages
-.map(cur => (cur <= 2 ? cur * 2 : 16 + cur * 4))
-.filter(cur => cur >= 18)
-.reduce((acu, cur, i, arr) => acu + cur / arr.length, 0);
+    .map(cur => (cur <= 2 ? cur * 2 : 16 + cur * 4))
+    .filter(cur => cur >= 18)
+    .reduce((acu, cur, i, arr) => acu + cur / arr.length, 0);
 
 const avgs2 = calcAverageHumanAge2(ages);
 console.log(avgs2);
@@ -102,3 +102,51 @@ const breeds = [
     activities: ['agility', 'fetch'],
   },
 ];
+
+// 1
+const huskyWeight = breeds.find(cur => cur.breed === 'Husky').averageWeight;
+console.log(huskyWeight);
+
+// 2
+const dogBothActivities = breeds.find(
+  cur => cur.activities.includes('running') && cur.activities.includes('fetch')
+).breed;
+console.log(dogBothActivities);
+
+// 3
+// const allActivities = breeds.map(cur => cur.activities).flat();
+const allActivities = breeds.flatMap(cur => cur.activities);
+console.log(allActivities);
+
+// 4
+const uniqueActivities = [...new Set(breeds.flatMap(cur => cur.activities))];
+console.log(uniqueActivities);
+
+// 5
+const swimmingAdjacent = [
+  ...new Set(
+    breeds
+      .filter(cur => cur.activities.includes('swimming'))
+      .flatMap(cur => cur.activities)
+      .filter(activity => activity !== 'swimming')
+  ),
+];
+console.log(swimmingAdjacent);
+
+// 6
+const averageWeightAll = breeds.every(cur => cur.averageWeight >= 10);
+console.log(averageWeightAll);
+
+// 7
+const activeBreed = breeds.some(cur => cur.activities.length >= 3);
+console.log(activeBreed);
+
+// BONUS
+const fetchWeight = breeds
+  .filter(cur => cur.activities.includes('fetch'))
+  .map(cur => cur.averageWeight);
+
+const haviestWeightBreed = Math.max(...fetchWeight);
+
+console.log(fetchWeight);
+console.log(haviestWeightBreed);
