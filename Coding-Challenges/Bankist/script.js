@@ -150,3 +150,88 @@ const haviestWeightBreed = Math.max(...fetchWeight);
 
 console.log(fetchWeight);
 console.log(haviestWeightBreed);
+
+// challenge --> 5
+// TEST DATA:
+// Formula : recommendedFood = weight ** 0.75 * 28
+const dogs = [
+  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+  { weight: 8, curFood: 200, owners: ['Matilda'] },
+  { weight: 13, curFood: 275, owners: ['Sarah', 'John', 'Leo'] },
+  { weight: 18, curFood: 244, owners: ['Joe'] },
+  { weight: 32, curFood: 340, owners: ['Michael'] },
+];
+
+// --> 1
+dogs.forEach(cur => {
+  cur.recFood = Math.trunc(cur.weight ** 0.75 * 28);
+});
+console.log(dogs);
+
+// --> 2
+const dogSarah = dogs.find(cur => cur.owners.includes('Sarah'));
+
+dogSarah.curFood > dogSarah.recFood
+  ? console.log(`it's eating too much `)
+  : console.log(`it's eating too little`);
+
+// --> 3
+const ownersTooMuch = dogs
+  .filter(cur => cur.curFood > cur.recFood)
+  .map(cur => cur.owners)
+  .flat();
+console.log(ownersTooMuch);
+
+const ownersTooLittle = dogs
+  .filter(cur => cur.curFood < cur.recFood)
+  .map(cur => cur.owners)
+  .flat();
+console.log(ownersTooLittle);
+
+// --> 4
+console.log(`${ownersTooMuch.join(' and ')}'s dogs eat too much!!`);
+console.log(`${ownersTooLittle.join(' and ')}'s dogs eat too little!!`);
+
+// --> 5
+console.log(dogs.some(cur => cur.curFood ===  cur.recFood));
+
+// --> 6
+console.log(
+  dogs.every(
+    cur =>
+      cur.curFood > Math.trunc(cur.recFood * 0.9) &&
+      cur.curFood < Math.trunc(cur.recFood * 1.1)
+  )
+);
+
+// --> 7
+const ownerOkay = dogs.filter(
+  cur =>
+    cur.curFood >= Math.trunc(cur.recFood * 0.9) &&
+    cur.curFood <= Math.trunc(cur.recFood * 1.1)
+);
+console.log(ownerOkay);
+
+// --> 8
+const groupdByFoodPortion = Object.groupBy(dogs, cur => {
+  if (cur.curFood === cur.recFood) return 'exact';
+  if (cur.curFood > cur.recFood) return 'too-much';
+  if (cur.curFood < cur.recFood) return 'too-little';
+});
+console.log(groupdByFoodPortion);
+
+// --> 9
+const dogsGroup = Object.groupBy(dogs, cur => {
+  const dogsLength = cur.owners.length;
+  return dogsLength;
+});
+console.log(dogsGroup);
+
+// --> 10
+const sortedDogs = dogs.slice().sort((a, b) => {
+  if (a.recFood > b.recFood) return 1; // swap
+  if (a.recFood < b.recFood) return -1; // no swap
+  return 0;
+});
+console.log(dogs);
+console.log(sortedDogs);
